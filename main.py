@@ -1,4 +1,5 @@
 import io
+import os
 from flask import Flask, request
 from predict import predict
 app = Flask(__name__)
@@ -14,4 +15,4 @@ def main():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=False, port=5000)
