@@ -1,5 +1,4 @@
 import io
-import os
 from flask import Flask, request
 from predict import predict
 app = Flask(__name__)
